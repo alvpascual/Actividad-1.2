@@ -1,0 +1,99 @@
+/* Lista de filas de peliculas*/
+.listaPeliculas {
+	margin: auto;
+	width: 95%;
+	margin-top: 50px;
+}
+
+/* Cada una de las filas contiene una filaPelicula y un borde abajo*/
+.fila {
+	width: 100%;
+}
+
+.filaPelicula {
+	margin-top: 10px;
+	height: 200px;
+	width: 100%;
+}
+
+.bordeAbajo {
+	width:85%;
+	margin-top: 10px;
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+/* La fila de la pelicula tiene distintas secciones de distinto tamaño */
+.seccion:nth-of-type(1) {
+	width: 10%;
+}
+
+.seccion:nth-of-type(2) {
+	width: 75%;
+}
+
+.seccion:nth-of-type(3) {
+	width: 15%;
+}
+
+/* La primera seccion es una imagen, ajustamos sus dimensiones */
+
+.imagen {
+	min-width: 50px;
+	width: 5%;
+}
+
+.imagen img {
+	width: 150px;
+}
+
+/* La segunda seccion son los detales de la pelicula */
+
+.detalles {
+	width: 100%;
+}
+
+.detalles .director {
+	color: rgb(50, 110, 156);
+	text-decoration: none;
+}
+
+.detalles .listaActores {
+	width: 80%;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.bandera {
+	margin-top: -10px;
+}
+
+/* La tercera seccion es la calificacion y los votos de la pelicula*/
+
+.divVotos {
+	height: 100%;
+	width:100%;
+	float: left;
+	text-align: center;
+	border-left:1px solid;
+	border-left-color: rgba(0, 0, 0, 0.2);
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.divVotos div {
+	margin-top: 45px;
+}
+
+.divCalificacion {
+	display: inline-block;
+	text-align: center;
+	width:50px;
+	height:50px;
+	border-radius: 5px;
+  	background: rgb(70, 130, 180);
+}
+
+.divCalificacion p {
+	margin-top: 6px;
+	font-size: 28px;
+	color: white;
+}
